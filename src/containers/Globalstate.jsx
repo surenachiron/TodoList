@@ -3,12 +3,11 @@ import React, { useState } from "react";
 import AddTodoInList from "../component/AddTodo/AddTodoInList";
 import MapInDoneTasks from "../component/ListDoneTasks/MapInDoneTasks";
 import Context from "../contexapi/Context";
-import { ToastContainer, toast } from 'react-toastify'
+import { toast } from 'react-toastify'
 
 import 'react-toastify/dist/ReactToastify.css'
 import '../component/Css/ForComponent.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faMoon, faSun } from '@fortawesome/fontawesome-free-solid'
 
 const Globalstate = ({ children }) => {
 

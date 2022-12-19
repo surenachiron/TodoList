@@ -1,6 +1,6 @@
 import React, {Fragment, useContext} from "react";
 import ContentHeader from "../component/Header/ContentHeader";
-import {ToastContainer ,toast} from "react-toastify";
+import {ToastContainer} from "react-toastify";
 import AddAndShowDoneTask from "../component/Features/AddAndShowDoneTask";
 import Context from "../contexapi/Context";
 
