@@ -8,6 +8,7 @@ import { toast } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
 import '../component/Css/ForComponent.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faMoon,faSun } from "@fortawesome/fontawesome-free-solid";
 
 const Globalstate = ({ children }) => {
 
@@ -181,7 +182,7 @@ const Globalstate = ({ children }) => {
     let deleticon = ""
     let changeopacitydonetasks = ""
     if (gettruefalsedarktheme === true) {
-        darkorlight = <FontAwesomeIcon icon="sun" color="#c77f00" className="p-2 mt-1" />
+        darkorlight = <FontAwesomeIcon icon={faSun} color="#c77f00" className="p-2 mt-1" />
         changecolordescription = "text-white"
         editicon = "editdark"
         deleticon = "deleticondark"
@@ -189,7 +190,7 @@ const Globalstate = ({ children }) => {
         changebgbutton = "bg-light"
         document.querySelector("body").style.background = "#212529"
     } else {
-        darkorlight = <FontAwesomeIcon icon="moon" color="#c77f00" className="p-2 mt-1" />
+        darkorlight = <FontAwesomeIcon icon={faMoon} color="#c77f00" className="p-2 mt-1" />
         changecolordescription = "text-dark"
         editicon = "editlight"
         deleticon = "deleticonlight"
