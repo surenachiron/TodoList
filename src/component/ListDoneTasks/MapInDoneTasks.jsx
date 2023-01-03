@@ -11,6 +11,7 @@ const MapInDoneTasks = () => {
             {context.Donetaskss.length === 0 ? (
                 <DoneTasks
                     textempty="شما تاکنون هیچ کاری را کامل نکرده اید."
+                    classchangecolordec={context.classess.map(p => p.changecolordescription)}
                 >
                 </DoneTasks>
             )
