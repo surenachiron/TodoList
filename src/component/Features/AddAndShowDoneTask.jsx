@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import React, { useContext, useEffect } from "react";
 import Context from "../../contexapi/Context";
 import '../Css/ForComponent.css';
 import { NavLink, useLocation } from "react-router-dom";
@@ -14,6 +14,10 @@ const AddAndShowDoneTask = () => {
     } else {
         copystate2 = <NavLink to="/" style={{ marginRight: "2px", textDecoration: "none" }} className="fs-7 p-3 btnadvanced" >خانه</NavLink>
     }
+
+    useEffect(() => {
+        if (context.forshowaddtodo === true) context.showehideaddtodo()
+    }, [location.pathname])
 
     return (
         <div className="d-flex">

@@ -16,7 +16,7 @@ const MapInListWork = ({ classeditblock, classhidecontent, classediticon, classd
             >
             </ShowListWork>
          ) : (
-            <div className="d-flex flex-column m-auto justify-content-center align-items-center">
+            <div className="d-flex flex-column m-auto justify-content-center align-items-center mt-4">
                {context.TODOLISTcontext.map(o => (
                   <ShowListWork
                      namework={o.namework}

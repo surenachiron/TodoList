@@ -12,7 +12,7 @@ const TodoList = () => {
         <Fragment>
 
             <ContentHeader />
-            <button onClick={context.fordarkthemetruefalse} style={{position:"fixed",bottom: "0",right: "0",zIndex: "10000"}} className={`${context.classess.map(p => p.changebgbutton)} m-5 border-0 p-2 rounded-circle shadow-lg`}>
+            <button onClick={context.fordarkthemetruefalse} style={{position:"fixed",bottom: "0",right: "0",zIndex: "10000"}} className={`${context.classess.map(p => p.changebgbutton)} m-2 border-0 px-1 rounded-circle shadow-lg`}>
                 {context.classess.map(p => p.darkorlight)}
             </button>
             <ToastContainer />

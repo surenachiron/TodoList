@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 import AddTodoInList from "../component/AddTodo/AddTodoInList";
 import MapInDoneTasks from "../component/ListDoneTasks/MapInDoneTasks";
@@ -8,7 +8,7 @@ import { toast } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
 import '../component/Css/ForComponent.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faMoon,faSun } from "@fortawesome/fontawesome-free-solid";
+import { faMoon, faSun } from "@fortawesome/fontawesome-free-solid";
 
 const Globalstate = ({ children }) => {
 
@@ -35,6 +35,7 @@ const Globalstate = ({ children }) => {
     const addtodoshowhide = () => {
         changevalueaddtodoshowhide(!getvalueaddtodoshowhide)
     }
+
     const edittodoshowhide = () => {
         changevalueedittodoshowhide(!getvalueedittodoshowhide)
     }
@@ -76,7 +77,7 @@ const Globalstate = ({ children }) => {
     const delettodolist = id => {
         const todobeforee = [...getvaluetodolist];
         const filterr = todobeforee.filter(p => p.id !== id)
-        toast.error(` با موفقیت حذف شد`, { position: "top-right" })
+        toast.success(` با موفقیت حذف شد`, { position: "top-right" })
         changevaluetodolist(filterr)
     }
 
@@ -180,13 +181,11 @@ const Globalstate = ({ children }) => {
     let changecolordescription = ""
     let editicon = ""
     let deleticon = ""
-    let changeopacitydonetasks = ""
     if (gettruefalsedarktheme === true) {
         darkorlight = <FontAwesomeIcon icon={faSun} color="#c77f00" className="p-2 mt-1" />
         changecolordescription = "text-white"
         editicon = "editdark"
         deleticon = "deleticondark"
-        changeopacitydonetasks = 'donetask-dark'
         changebgbutton = "bg-light"
         document.querySelector("body").style.background = "#212529"
     } else {
@@ -194,7 +193,6 @@ const Globalstate = ({ children }) => {
         changecolordescription = "text-dark"
         editicon = "editlight"
         deleticon = "deleticonlight"
-        changeopacitydonetasks = ''
         changebgbutton = "bg-dark"
         document.querySelector("body").style.background = "white"
     }
@@ -218,7 +216,7 @@ const Globalstate = ({ children }) => {
     }
 
     const classes = [{
-        editpush: editpush, edithidecontent: edithidecontent, changebgbutton: changebgbutton, darkorlight: darkorlight, changecolordescription: changecolordescription, editicon: editicon, deleticon: deleticon, changeopacitydonetasks: changeopacitydonetasks, disableiconedit: disableiconedit
+        editpush: editpush, edithidecontent: edithidecontent, changebgbutton: changebgbutton, darkorlight: darkorlight, changecolordescription: changecolordescription, editicon: editicon, deleticon: deleticon, disableiconedit: disableiconedit
     }]
 
 
@@ -227,7 +225,7 @@ const Globalstate = ({ children }) => {
             TODOLISTcontext: getvaluetodolist,
             Donetaskss: getvalueDonetaskss,
             classess: classes,
-            testforapp: getvalueaddtodoshowhide,
+            forshowaddtodo: getvalueaddtodoshowhide,
             showehideaddtodo: addtodoshowhide,
             showehideedittodo: edittodoshowhide,
             newnameset: setnewnametodo,

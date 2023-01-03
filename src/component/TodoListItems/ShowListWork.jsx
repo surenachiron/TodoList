@@ -7,7 +7,7 @@ const ShowListWork = ({ namework, description, deleted, edit, edit1, donetasks, 
         <Fragment>
             {(textempty === undefined) ? (
                 <div className="container">
-                    <div style={{ boxShadow: "0px 0px 2px 0px #ffffff", borderRadius: "6px" }} className="row mt-3">
+                    <div style={{ boxShadow: "0px 0px 2px 0px #ffffff", borderRadius: "6px" }} className="container mt-3">
                         <div className="col-12 col-lg-10 col-md-12 col-sm-12 m-auto d-flex p-2 align-items-center row" >
 
                             <div className="col-6 col-lg-2 col-md-2 col-sm-6 order-2 order-sm-2 d-flex justify-content-lg-center justify-content-md-right">
