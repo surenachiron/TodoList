@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 
 import AddTodoInList from "../component/AddTodo/AddTodoInList";
 import MapInDoneTasks from "../component/ListDoneTasks/MapInDoneTasks";
@@ -8,8 +8,7 @@ import { toast } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
 import '../component/Css/ForComponent.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faMoon, faSun, faWindowClose } from "@fortawesome/fontawesome-free-solid";
-import { faDeleteLeft } from "@fortawesome/free-solid-svg-icons";
+import { faMoon, faSun } from "@fortawesome/fontawesome-free-solid";
 
 const Globalstate = ({ children }) => {
 
@@ -181,19 +180,22 @@ const Globalstate = ({ children }) => {
     let darkorlight = "";
     let changecolordescription = ""
     let editicon = ""
+    let deliteicon = ""
     let deletbutton = ""
     if (gettruefalsedarktheme === true) {
         darkorlight = <FontAwesomeIcon icon={faSun} color="#c77f00" className="p-2 mt-1" />
         changecolordescription = "text-white"
         editicon = "editdark"
-        deletbutton = <button className="text-danger fs-5 border-0 nonebackgroundbutton">&#10006;</button>
+        deliteicon = "delite"
+        deletbutton = <button className={`${deliteicon} fs-5 border-0 nonebackgroundbutton`}>&#10006;</button>
         changebgbutton = "bg-light"
         document.querySelector("body").style.background = "#212529"
     } else {
         darkorlight = <FontAwesomeIcon icon={faMoon} color="#c77f00" className="p-2 mt-1" />
         changecolordescription = "text-dark"
         editicon = "editlight"
-        deletbutton = <button className="text-danger fs-5 border-0 nonebackgroundbutton">&#10006;</button>
+        deliteicon = "delite"
+        deletbutton = <button className={`${deliteicon} fs-5 border-0 nonebackgroundbutton`}>&#10006;</button>
         changebgbutton = "bg-dark"
         document.querySelector("body").style.background = "white"
     }

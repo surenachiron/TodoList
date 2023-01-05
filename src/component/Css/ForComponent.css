@@ -23,6 +23,9 @@
     text-align: right;
     line-height: 30px;
 }
+.delite{
+    color: red;
+}
 .editdark{
     cursor: pointer;
     color: #00e8ff;
