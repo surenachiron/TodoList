@@ -1,39 +1,48 @@
-*{
+* {
     font-family: BYekan;
 }
-.btnadvanced{
+
+.btnadvanced {
     cursor: pointer;
     color: white;
     font-weight: 500;
     background-color: #505050;
     border-radius: 13px;
 }
-.btnadvanced:hover{
+
+.btnadvanced:hover {
     color: white;
 }
-.divnametodof{
+
+.divnametodof {
     color: #2fff00;
     background: white;
     border-radius: 10px;
 }
-.nametodof{
+
+.nametodof {
     text-align: right;
 }
-.descriptiontodo{
+
+.descriptiontodo {
     text-align: right;
     line-height: 30px;
 }
-.delite{
-    color: red;
+
+.delite {
+    color: rgb(248, 58, 58);
 }
-.editdark{
+
+.editdark {
     cursor: pointer;
     color: #00e8ff;
 }
+
 .editlight {
     cursor: pointer;
     color: #4a02ff;
 }
-.nonebackgroundbutton{
+
+.nonebackgroundbutton {
     background: none !important;
 }

@@ -29,8 +29,8 @@ const ShowListWork = ({ namework, description, deleted, edit, edit1, donetasks, 
                                 <div onClick={iddd} className="mt-3">
                                     {disaplededit}
                                 </div>
-                                <p className="mt-3">
-                                    {classdeleticon}
+                                <p className="mt-3" onClick={deleted}>
+                                    <button className="text-danger fs-5 border-0 nonebackgroundbutton">&#10006;</button>
                                 </p>
                             </div>
                         </div>

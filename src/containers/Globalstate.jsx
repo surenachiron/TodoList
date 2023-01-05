@@ -187,7 +187,7 @@ const Globalstate = ({ children }) => {
         changecolordescription = "text-white"
         editicon = "editdark"
         deliteicon = "delite"
-        deletbutton = <button className={`${deliteicon} fs-5 border-0 nonebackgroundbutton`}>&#10006;</button>
+        deletbutton = <button className={`${deliteicon} text-danger fs-5 border-0 nonebackgroundbutton`}>&#10006;</button>
         changebgbutton = "bg-light"
         document.querySelector("body").style.background = "#212529"
     } else {
@@ -195,7 +195,7 @@ const Globalstate = ({ children }) => {
         changecolordescription = "text-dark"
         editicon = "editlight"
         deliteicon = "delite"
-        deletbutton = <button className={`${deliteicon} fs-5 border-0 nonebackgroundbutton`}>&#10006;</button>
+        deletbutton = <button className={`${deliteicon} text-danger fs-5 border-0 nonebackgroundbutton`}>&#10006;</button>
         changebgbutton = "bg-dark"
         document.querySelector("body").style.background = "white"
     }
