@@ -6,9 +6,9 @@ const ShowListWork = ({ namework, description, deleted, edit, edit1, donetasks, 
     return (
         <Fragment>
             {(textempty === undefined) ? (
-                <div className="container">
-                    <div style={{ boxShadow: "0px 0px 2px 0px #ffffff", borderRadius: "6px" }} className="container mt-3">
-                        <div className="col-12 col-lg-10 col-md-12 col-sm-12 m-auto d-flex p-2 align-items-center row" >
+                <div className="container m-auto d-flex align-items-center justify-content-center mt-2">
+                    <div style={{ borderRadius: "13px", boxShadow: "0 0.1rem 0.5rem rgba(0,0,0,0.1)" }} className="row d-flex mt-3 mx-2 p-3 col-12 col-lg-9" >
+                        <div className="col-12 col-lg-10 col-md-12 col-sm-12 m-auto d-flex py-3 px-2 align-items-center row" >
 
                             <div className="col-6 col-lg-2 col-md-2 col-sm-6 order-2 order-sm-2 d-flex justify-content-lg-center justify-content-md-right">
                                 <input type="button" value="انجام شد" onClick={donetasks} className="btn btn-md btn-warning" />
@@ -25,12 +25,12 @@ const ShowListWork = ({ namework, description, deleted, edit, edit1, donetasks, 
                                 <button onClick={confirm} className={`btn btn-success`}>تایید</button>
                             </div>
 
-                            <div className="col-6 col-lg-2 col-md-2 col-sm-6 justify-content-end d-flex order-3 mt-3">
+                            <div className="col-6 col-lg-2 col-md-2 col-sm-6 justify-content-end d-flex order-3">
                                 <div onClick={iddd} className="mt-3">
                                     {disaplededit}
                                 </div>
                                 <p className="mt-3">
-                                    <p onClick={deleted} className={`${classdeleticon} fs-5`}>&#10006;</p>
+                                    {classdeleticon}
                                 </p>
                             </div>
                         </div>

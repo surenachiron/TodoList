@@ -6,20 +6,18 @@ const DoneTasks = ({ textempty, name, description, delet1, classchangecolordec }
     return (
         <Fragment>
             {(textempty === undefined) ? (
-                <div className="d-flex flex-column m-auto justify-content-center align-items-center">
-                    <div className="container m-auto">
-                        <div style={{ background: "#a0fea0", borderRadius: "13px" }} className="row d-flex mt-3 mx-2 p-2 shadow" >
-                            <div className="col-11 col-lg-11 col-md-11 col-sm-11">
-                                <h5 className="w-50 nametodof rounded p-2 shadow divnametodof">{name}</h5>
-                                <p className="descriptiontodo p-1">{description}</p>
-                            </div>
+                <div className="container m-auto d-flex align-items-center justify-content-center mt-2">
+                    <div style={{ background: "#a0fea0", borderRadius: "13px" }} className="row d-flex mt-3 mx-2 p-3 shadow col-12 col-lg-9" >
+                        <div className="col-11 col-lg-11 col-md-10 col-sm-10">
+                            <h5 className="col-8 nametodof rounded p-2 shadow divnametodof">{name}</h5>
+                            <p className="descriptiontodo p-1">{description}</p>
+                        </div>
 
-                            <div className="col-1 col-lg-1 col-md-1 col-sm-1">
-                                <p onClick={delet1} className="deleticonlight fs-5">&#10006;</p>
-                            </div>
+                        <div className="col-1 col-lg-1 col-md-2 col-sm-2">
+                            <p onClick={delet1} role="button" className="text-danger fs-5">&#10006;</p>
                         </div>
-                        <div>
-                        </div>
+                    </div>
+                    <div>
                     </div>
                 </div>
             ) :

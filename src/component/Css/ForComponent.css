@@ -23,38 +23,13 @@
     text-align: right;
     line-height: 30px;
 }
-.deleticondark{
-    cursor: pointer;
-    color: #980000;
-    margin-right: 8px;
-}
-.deleticondark:hover{
-    color: #ff0000;
-    transition: .5s ease;
-}
-.deleticonlight{
-    cursor: pointer;
-    color: #ff0000;
-    margin-right: 8px;
-}
 .editdark{
     cursor: pointer;
-    color: #007281;
-}
-.editdark:hover{
-    transition: .4s ease;
     color: #00e8ff;
 }
 .editlight {
     cursor: pointer;
     color: #4a02ff;
-}
-.donetask-dark {
-    opacity: .9;
-}
-.donetask-dark:hover {
-    transition: 1.2s;
-    opacity: 1;
 }
 .nonebackgroundbutton{
     background: none !important;
