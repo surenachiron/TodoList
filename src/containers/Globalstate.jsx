@@ -13,15 +13,7 @@ import { faMoon, faSun } from "@fortawesome/fontawesome-free-solid";
 const Globalstate = ({ children }) => {
 
     // todo : this is a statee
-    const [getvaluetodolist, changevaluetodolist] = useState([{
-        id: 1,
-        namework: "یادگیری زبان انگلیسی",
-        descriptionwork: "من باید هر روز در ساعت 10:30 به یادگیری زبان انگلیسی بپردازم"
-    }, {
-        id: 2,
-        namework: "یادگیری ری اکت",
-        descriptionwork: "هر روز در ساعت 15 تا 23 به یادگیری و تمرین و تکرار ری اکت میپردازم"
-    }])
+    const [getvaluetodolist, changevaluetodolist] = useState([])
     const [getvalueaddnamework, changevalueaddnamework] = useState("")
     const [getvalueadddescriptionwork, changevalueadddescriptionwork] = useState("")
     const [getvalueDonetaskss, changevalueDonetaskss] = useState([])
